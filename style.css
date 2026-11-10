@@ -17,3 +17,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* body */
+body{
+    background-color: var(--background);
+    font-family: 'Fira Code', monospace;
+}
+
+/* header */
+header {
+    margin: 1.8rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#h-text {
+    color: var(--main-text);
+    font-size: 2.5rem;
+}
+
+#h-time {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--muted-text);
+}
+
+header p {
+    color: var(--muted-text);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* navbar */
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: var(--main-text);
+    font-size: 1.2rem;
+    background-color: var(--surface);
+    border: 1px solid var(--key-border);
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    outline: 1px solid var(--muted-text);
+}

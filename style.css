@@ -22,6 +22,7 @@
 body{
     background-color: var(--background);
     font-family: 'Fira Code', monospace;
+    color: wheat;
 }
 
 /* header */
@@ -79,3 +80,59 @@ nav a {
 nav a:hover {
     outline: 1px solid var(--muted-text);
 }
+
+/* main */
+main{
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+section {
+    border-bottom: 1px solid var(--accent-blue);
+}
+
+h2 {
+    color: var(--accent-blue);
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+table, aside {
+    border: 1px solid var(--key-border);
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    background-color: var(--surface);
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid var(--key-border);
+}
+
+tr th {
+    font-weight: 800;
+}
+
+td {
+    color: var(--main-text);
+}
+
+aside mark{
+    background-color: var(--highlight);
+    color: #1a1a1a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+aside p {
+    color: var(--muted-text);
+    margin-top: 2rem;
+}
+
+p u {
+    text-decoration: wavy underline;
+    text-decoration-color: var(--misspell-red);
+}
+

@@ -39,6 +39,7 @@ h1 {
 
 #h-text {
     color: var(--main-text);
+    font-size: 2.5rem;
 }
 
 #h-time {
@@ -51,4 +52,30 @@ header p {
     color: var(--muted-text);
     font-size: 1.1rem;
     margin-bottom: 2rem;
+}
+
+/* navbar */
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: var(--main-text);
+    font-size: 1.2rem;
+    background-color: var(--surface);
+    border: 1px solid var(--key-border);
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    outline: 1px solid var(--muted-text);
 }

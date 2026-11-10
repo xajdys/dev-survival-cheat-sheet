@@ -18,19 +18,37 @@
     box-sizing: border-box;
 }
 
+/* body */
+body{
+    background-color: var(--background);
+    font-family: 'Fira Code', monospace;
+}
+
 /* header */
+header {
+    margin: 1rem;
+}
 
 h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #h-text {
-    color: rgb(79, 79, 230);
+    color: var(--main-text);
 }
 
 #h-time {
     font-size: 0.8rem;
     text-decoration: none;
+    color: var(--muted-text);
+}
+
+header p {
+    color: var(--muted-text);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }

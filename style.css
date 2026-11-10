@@ -1,4 +1,4 @@
-:root{
+:root {
     --background: #0f1419;
     --surface: #1a2230;
     --main-text: #e6edf3;
@@ -19,7 +19,7 @@
 }
 
 /* body */
-body{
+body {
     background-color: var(--background);
     font-family: 'Fira Code', monospace;
     color: wheat;
@@ -56,7 +56,7 @@ header p {
 }
 
 /* navbar */
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -77,12 +77,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+.card:hover {
     outline: 1px solid var(--muted-text);
 }
 
 /* main */
-main{
+main {
     margin: 0 auto;
     padding: 3rem;
 }
@@ -95,9 +96,13 @@ h2 {
     color: var(--accent-blue);
     margin-left: 0.5rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
 }
 
-table, aside {
+/* glossary */
+table,
+aside {
     border: 1px solid var(--key-border);
     padding: 30px;
     text-align: left;
@@ -106,7 +111,8 @@ table, aside {
     background-color: var(--surface);
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     border-bottom: 1px solid var(--key-border);
 }
@@ -119,7 +125,7 @@ td {
     color: var(--main-text);
 }
 
-aside mark{
+aside mark {
     background-color: var(--highlight);
     color: #1a1a1a;
     padding: 0.2rem 0.5rem;
@@ -136,3 +142,36 @@ p u {
     text-decoration-color: var(--misspell-red);
 }
 
+/* shortcut */
+.card {
+    border: 1px solid var(--key-border);
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: var(--surface);
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#shortcuts .card h3 {
+    margin-bottom: 0.5rem;
+}
+
+#shortcuts .card p+p {
+    margin-top: 0.5rem;
+}
+
+#block {
+    margin-bottom: 1rem;
+}
+
+#key-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

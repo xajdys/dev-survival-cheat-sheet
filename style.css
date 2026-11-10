@@ -1,3 +1,17 @@
+:root{
+    --background: #0f1419;
+    --surface: #1a2230;
+    --main-text: #e6edf3;
+    --muted-text: #8b98a9;
+    --accent-blue: #4fc3f7;
+    --highlight: #ffd166;
+    --keycap: #2b3445;
+    --key-border: #46536a;
+    --output-green: #7ee787;
+    --var-orange: #ff9e64;
+    --misspell-red: #ff6b6b;
+}
+
 * {
     margin: 0;
     padding: 0;
